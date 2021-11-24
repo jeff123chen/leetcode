@@ -9,5 +9,7 @@ class Solution(object):
         for i in range(len(nums)):
             
             if (target-nums[i]) in nums:
-                return i,nums.index(target-nums[i])
+                if i != nums.index(target-nums[i]):
+                    return i,nums.index(target-nums[i])
+            
         
